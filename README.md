@@ -17,23 +17,24 @@ Backend REST API for **TravelEase**, a travel booking platform. Built with **Nod
 - **Database:** MongoDB with Mongoose
 - **Auth:** JSON Web Tokens (`jsonwebtoken`) + `bcryptjs`
 
-## Project Structure├── app.js # Entry point, route mounting
+## Project Structure
+├── app.js                    # Entry point, route mounting
 ├── config/
-│ └── db.js # MongoDB connection
+│   └── db.js                 # MongoDB connection
 ├── controllers/
-│ ├── userController.js # Signup, login, logout, profile, user bookings
-│ ├── bookingController.js # CRUD + search for bookings
-│ └── reviewController.js # CRUD for reviews
+│   ├── userController.js     # Signup, login, logout, profile, user bookings
+│   ├── bookingController.js  # CRUD + search for bookings
+│   └── reviewController.js   # CRUD for reviews
 ├── middleware/
-│ └── authMiddleware.js # JWT verification (protect)
+│   └── authMiddleware.js     # JWT verification (protect)
 ├── models/
-│ ├── userModel.js
-│ ├── bookingModel.js
-│ └── reviewModel.js
+│   ├── userModel.js
+│   ├── bookingModel.js
+│   └── reviewModel.js
 └── routes/
-├── userRoutes.js
-├── bookingRoutes.js
-└── reviewRoutes.js## Setup
+    ├── userRoutes.js
+    ├── bookingRoutes.js
+    └── reviewRoutes.js
 
 1. Clone the repo and install dependencies:
 ```bash
